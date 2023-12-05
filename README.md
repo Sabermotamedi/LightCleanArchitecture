@@ -18,7 +18,7 @@ If you find this project useful, please give it a star. Thanks! ⭐
 The easiest way to get started is to install the .NET template:
 
 ```bash
-dotnet new install Clean.Architecture.Solution.Template::8.0.0
+dotnet new install Clean.Architecture.Simple.Template::8.0.0
 ```
 
 
