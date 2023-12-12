@@ -35,3 +35,6 @@ dotnet new cal-sln -cf None -o YourProjectName
 1. [Setup](#setup)
 2. [Authorization with Identity Server 4](#authorization-with-identity-server-4)
 
+# Where I you use this Template?
+
+![Project structure](./Solution Items/bluePrint.jpeg)
