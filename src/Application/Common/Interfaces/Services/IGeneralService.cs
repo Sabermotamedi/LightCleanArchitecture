@@ -1,4 +1,4 @@
-﻿namespace RMgmt.Application.Common.Interfaces.Services;
+﻿namespace Application.Common.Interfaces.Services;
 
 public interface IGeneralService<T>
 {

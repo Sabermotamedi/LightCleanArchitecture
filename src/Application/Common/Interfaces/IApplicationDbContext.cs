@@ -1,5 +1,4 @@
 ﻿using Domain.Entities;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace CleanArchitecture.Application.Common.Interfaces;

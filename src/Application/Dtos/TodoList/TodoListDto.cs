@@ -1,13 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Entities;
+using Domain.Enums;
 
 namespace Application.Dtos
 {
     public class TodoListDto
     {
+        public int Id { get; set; }
 
+        public string? Title { get; set; }
+
+        public Colour Colour { get; set; } = Colour.White;
+
+        public IList<TodoItem> Items { get; private set; } = new List<TodoItem>();
+
+        public DateTimeOffset Created { get; set; }
+
+        public string? CreatedBy { get; set; }
+
+        public DateTimeOffset LastModified { get; set; }
+
+        public string? LastModifiedBy { get; set; }
     }
 }

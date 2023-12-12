@@ -1,4 +1,4 @@
-﻿# Clean Architecture Solution Template
+﻿# Light Clean Architecture Solution Template
 
 [![Nuget](https://img.shields.io/nuget/v/Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template/)
 [![Nuget](https://img.shields.io/nuget/dt/Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template/)
@@ -34,5 +34,4 @@ dotnet new cal-sln -cf None -o YourProjectName
 
 1. [Setup](#setup)
 2. [Authorization with Identity Server 4](#authorization-with-identity-server-4)
-3. [Not Using Identity and MediatR](#not-using-identity-and-mediatr)
 

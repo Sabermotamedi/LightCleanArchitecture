@@ -1,5 +1,4 @@
 ﻿using Domain.Entities;
-using RMgmt.Application.Common.Interfaces.Services;
 
 namespace Application.Common.Interfaces.Services
 {
