@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{70C1ACA9-EC3B-4883-B17E-E34FE72AB898}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "src\Web\Web.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\Web\WebApi.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0581EC4C-FD1A-4D58-B92A-DA2FF2A44FD7}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
 		..\..\..\Users\SaberMotamedi\Downloads\bluePrint.jpeg = ..\..\..\Users\SaberMotamedi\Downloads\bluePrint.jpeg
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7AEB5C06-A0DF-483B-AA72-2E8770442FE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D0B73C40-B266-4949-96C1-093A9ED58BCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

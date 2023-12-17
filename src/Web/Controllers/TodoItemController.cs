@@ -40,7 +40,7 @@ namespace Web.Controllers
         {
             var addedEntity = await _todoItemService.AddAsync(entity.ToModel());
 
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = addedEntity.Id }, addedEntity);
+            return Ok(addedEntity);
         }
 
         [HttpPut("{id}")]
