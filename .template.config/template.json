@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "SaberMotamedi",
+    "classifications": [
+        "Web",
+        "SPA",
+        "ASP.NET",
+        "Clean Architecture"
+    ],
+    "name": "Light Clean Architecture Solution",
+    "description": "A Light Clean Architecture Solution Template for creating a WebAPI Application with ASP.NET Core.",
+    "identity": "Light.Clean.Architecture.Solution.CSharp",
+    "groupIdentity": "Light.Clean.Architecture.Solution",
+    "shortName": "lca-sln",
+    "sourceName": "LightCleanArchitecture",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": true
+}
