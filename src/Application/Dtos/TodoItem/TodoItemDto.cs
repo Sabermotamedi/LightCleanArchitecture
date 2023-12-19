@@ -1,11 +1,6 @@
-﻿using Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LightCleanArchitecture.Domain.Enums;
 
-namespace Application.Dtos
+namespace LightCleanArchitecture.Application.Dtos
 {
     public class TodoItemDto
     {

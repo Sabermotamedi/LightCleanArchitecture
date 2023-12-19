@@ -1,5 +1,5 @@
-﻿using Application.Common.Interfaces.Services;
-using Application.Services;
+﻿using LightCleanArchitecture.Application.Common.Interfaces.Services;
+using LightCleanArchitecture.Application.Services;
 using System.Reflection;
 
 namespace Microsoft.Extensions.DependencyInjection;

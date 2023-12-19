@@ -1,6 +1,6 @@
-﻿using Domain.Enums;
+﻿using  LightCleanArchitecture.Domain.Enums;
 
-namespace Domain.Entities;
+namespace LightCleanArchitecture.Domain.Entities;
 
 public class TodoList 
 {

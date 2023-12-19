@@ -1,4 +1,4 @@
-﻿namespace Domain.Enums;
+﻿namespace LightCleanArchitecture.Domain.Enums;
 
 public enum PriorityLevel
 {

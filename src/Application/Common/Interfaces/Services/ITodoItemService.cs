@@ -1,6 +1,6 @@
-﻿using Domain.Entities;
+﻿using LightCleanArchitecture.Domain.Entities;
 
-namespace Application.Common.Interfaces.Services
+namespace LightCleanArchitecture.Application.Common.Interfaces.Services
 {
     public interface ITodoItemService : IGeneralService<TodoItem>
     {

@@ -1,9 +1,9 @@
-﻿using Application.Common.Interfaces.Services;
-using Application.Dtos;
-using Domain.Entities;
+﻿using LightCleanArchitecture.Application.Common.Interfaces.Services;
+using LightCleanArchitecture.Application.Dtos;
+using LightCleanArchitecture.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Web.Controllers
+namespace LightCleanArchitecture.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

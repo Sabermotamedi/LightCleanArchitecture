@@ -1,8 +1,8 @@
-﻿using Application.Common.Interfaces.Services;
-using CleanArchitecture.Application.Common.Interfaces;
-using Domain.Entities;
+﻿using LightCleanArchitecture.Application.Common.Interfaces.Services;
+using LightCleanArchitecture.Application.Common.Interfaces;
+using LightCleanArchitecture.Domain.Entities;
 
-namespace Application.Services
+namespace LightCleanArchitecture.Application.Services
 {
     public class TodoItemService : GeneralService<TodoItem>, ITodoItemService
     {

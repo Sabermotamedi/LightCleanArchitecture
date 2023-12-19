@@ -1,7 +1,7 @@
-﻿using Domain.Entities;
+﻿using LightCleanArchitecture.Domain.Entities;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace LightCleanArchitecture.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {

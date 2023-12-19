@@ -1,7 +1,7 @@
-﻿using Application.Common.Interfaces.Services;
-using CleanArchitecture.Application.Common.Interfaces;
+﻿using LightCleanArchitecture.Application.Common.Interfaces.Services;
+using LightCleanArchitecture.Application.Common.Interfaces;
 
-namespace Application.Services;
+namespace LightCleanArchitecture.Application.Services;
 
 public class GeneralService<T> : IGeneralService<T> where T : class
 {

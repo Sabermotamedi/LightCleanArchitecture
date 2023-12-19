@@ -1,4 +1,4 @@
-﻿namespace Web
+﻿namespace LightCleanArchitecture.Web
 {
     public static class DependencyInjection
     {

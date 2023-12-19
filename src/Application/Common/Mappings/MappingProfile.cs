@@ -1,5 +1,5 @@
-﻿using Application.Dtos;
-using Domain.Entities;
+﻿using LightCleanArchitecture.Application.Dtos;
+using LightCleanArchitecture.Domain.Entities;
 
 namespace RMgmt.Application.Common.Mappings;
 public class MappingProfile : Profile

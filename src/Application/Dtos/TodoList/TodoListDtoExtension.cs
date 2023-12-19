@@ -1,7 +1,7 @@
-﻿using Domain.Entities;
+﻿using LightCleanArchitecture.Domain.Entities;
 using RMgmt.Application.Common.Mappings;
 
-namespace Application.Dtos
+namespace LightCleanArchitecture.Application.Dtos
 {
     public static class TodoListDtoExtension
     {

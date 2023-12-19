@@ -1,4 +1,4 @@
-﻿namespace Application.Common.Interfaces.Services;
+﻿namespace LightCleanArchitecture.Application.Common.Interfaces.Services;
 
 public interface IGeneralService<T>
 {
