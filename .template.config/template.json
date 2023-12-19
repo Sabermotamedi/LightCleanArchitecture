@@ -17,5 +17,22 @@
         "language": "C#",
         "type": "project"
     },
-    "preferNameDirectory": true
+    "preferNameDirectory": true,
+    "sources": [
+        {
+          "source": "./",
+          "target": "./",
+          "exclude": [
+            ".template.config/**/*",
+            "templates/**/*",
+            "**/*.filelist",
+            "**/*.user",
+            "**/*.lock.json",
+            "*.nuspec"
+          ],
+          "rename": {
+            "README-template.md": "README.md"
+          }
+        }
+      ]
 }
