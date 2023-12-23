@@ -1,7 +1,7 @@
 ﻿# Light Clean Architecture Solution Template
 
-[![Nuget](https://img.shields.io/nuget/v/Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template/)
-[![Nuget](https://img.shields.io/nuget/dt/Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template/)
+[![Nuget](https://img.shields.io/nuget/v/Light.Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Light.Clean.Architecture.Solution.Template/)
+[![Nuget](https://img.shields.io/nuget/dt/Light.Clean.Architecture.Solution.Template.svg)](https://www.nuget.org/packages/Light.Clean.Architecture.Solution.Template/)
 [![Discord](https://img.shields.io/discord/saber.motamedi.svg)](https://discord.gg/saber.motamedi)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Saber_motamedi.svg?style=social)](https://twitter.com/Saber_motamedi)
 
@@ -14,9 +14,12 @@ If you find this project useful, please give it a star. Thanks! ⭐
 The easiest way to get started is to install the .NET template:
 
 ```bash
-dotnet new install Clean.Architecture.Light.Template::8.0.0
+dotnet new install Light.Clean.Architecture.Solution.Template::8.0.0
 ```
 
 
 # To create an ASP.NET Core Web API solution:
-dotnet new cal-sln -o YourProjectName
+
+```bash
+dotnet new lca-sln -o YourProjectName
+```

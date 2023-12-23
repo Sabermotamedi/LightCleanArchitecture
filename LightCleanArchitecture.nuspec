@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Light.Clean.Architecture.Solution.Template</id>
+    <version>8.0.1</version>
+    <title>Light Clean Architecture Solution Template</title>
+    <authors>SaberMotamedi</authors>
+    <description>Light Clean Architecture Solution Template for .NET 8.</description>
+    <summary>
+      A Light Clean Architecture Solution Template for creating apps using Web API with ASP.NET Core. WITHOUT cqrs and Identity
+    </summary>
+    <releaseNotes>
+      Upgrade NSwag and other packages to latest versions.
+    </releaseNotes>
+
+    <projectUrl>https://github.com/Sabermotamedi/LightCleanArchitecture</projectUrl>
+    <repository type="git" url="https://github.com/Sabermotamedi/LightCleanArchitecture.git" branch="main" />
+
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>clean-architecture project template csharp dotnet</tags>
+    <readme>README.md</readme>
+
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+
+  </metadata>
+
+  <files>
+    <file src="README.md" />
+    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**;.\.vs\**;.\.vscode\**;content\Directory.Build.*;.\.git\**;.\.github\workflows\package.yml;.\.github\workflows\codeql.yml;.\.github\ISSUE_TEMPLATE\**;.\.github\icon.png;.\CODE_OF_CONDUCT.md;.\LICENSE;.\README.md;" />
+  </files>
+
+</package>
