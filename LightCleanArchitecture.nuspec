@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Light.Clean.Architecture.Solution.Template</id>
-    <version>8.0.1</version>
+    <version>8.0.3</version>
     <title>Light Clean Architecture Solution Template</title>
     <authors>SaberMotamedi</authors>
     <description>Light Clean Architecture Solution Template for .NET 8.</description>

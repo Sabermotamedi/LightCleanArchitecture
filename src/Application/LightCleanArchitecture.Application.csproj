@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Domain\LightCleanArchitecture.Domain.csproj" />
   </ItemGroup>
 
 </Project>

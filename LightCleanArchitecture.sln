@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34310.174
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{2AE7F816-E9EE-45BA-9119-AD7BAEAC08C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.Domain", "src\Domain\LightCleanArchitecture.Domain.csproj", "{2AE7F816-E9EE-45BA-9119-AD7BAEAC08C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{382C68E9-8990-4D62-B23C-674B05A61004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.Infrastructure", "src\Infrastructure\LightCleanArchitecture.Infrastructure.csproj", "{382C68E9-8990-4D62-B23C-674B05A61004}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{70C1ACA9-EC3B-4883-B17E-E34FE72AB898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.Application", "src\Application\LightCleanArchitecture.Application.csproj", "{70C1ACA9-EC3B-4883-B17E-E34FE72AB898}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\Web\WebApi.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.WebApi", "src\Web\LightCleanArchitecture.WebApi.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0581EC4C-FD1A-4D58-B92A-DA2FF2A44FD7}"
 	ProjectSection(SolutionItems) = preProject

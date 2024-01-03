@@ -1,5 +1,5 @@
-﻿using LightCleanArchitecture.Domain.Entities;
-using RMgmt.Application.Common.Mappings;
+﻿using LightCleanArchitecture.Application.Common.Mappings;
+using LightCleanArchitecture.Domain.Entities;
 
 namespace LightCleanArchitecture.Application.Dtos
 {

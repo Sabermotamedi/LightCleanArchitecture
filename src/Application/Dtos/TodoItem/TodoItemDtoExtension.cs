@@ -1,28 +1,28 @@
-﻿using LightCleanArchitecture.Domain.Entities;
-using RMgmt.Application.Common.Mappings;
+﻿using LightCleanArchitecture.Application.Common.Mappings;
+using LightCleanArchitecture.Domain.Entities;
 
-namespace LightCleanArchitecture.Application.Dtos
+namespace LightCleanArchitecture.Application.Dtos;
+
+public static class TodoItemDtoExtension
 {
-    public static class TodoItemDtoExtension
+    private static readonly IMapper _mapper;
+
+    static TodoItemDtoExtension()
     {
-        private static readonly IMapper _mapper;
+        var mapperConfiguration =
+      new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
 
-        static TodoItemDtoExtension()
-        {
-            var mapperConfiguration =
-          new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
+        _mapper = mapperConfiguration.CreateMapper();
+    }
 
-            _mapper = mapperConfiguration.CreateMapper();
-        }
+    public static TodoItem ToModel(this TodoItemDto bedDto)
+    {
+        return _mapper.Map<TodoItem>(bedDto);
+    }
 
-        public static TodoItem ToModel(this TodoItemDto bedDto)
-        {
-            return _mapper.Map<TodoItem>(bedDto);
-        }
-
-        public static TodoItemDto ToDto(this TodoItem bed)
-        {
-            return _mapper.Map<TodoItemDto>(bed);
-        }
+    public static TodoItemDto ToDto(this TodoItem bed)
+    {
+        return _mapper.Map<TodoItemDto>(bed);
     }
 }
+

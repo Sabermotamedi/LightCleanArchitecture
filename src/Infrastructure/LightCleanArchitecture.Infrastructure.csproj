@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Application\LightCleanArchitecture.Application.csproj" />
   </ItemGroup>
 
 </Project>

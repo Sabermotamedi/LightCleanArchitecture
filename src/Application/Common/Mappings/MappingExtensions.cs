@@ -1,6 +1,6 @@
 ﻿using LightCleanArchitecture.Application.Common.Models;
 
-namespace CleanArchitecture.Application.Common.Mappings;
+namespace LightCleanArchitecture.Application.Common.Mappings;
 
 public static class MappingExtensions
 {
