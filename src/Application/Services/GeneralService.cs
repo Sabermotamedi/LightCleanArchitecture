@@ -3,7 +3,7 @@ using LightCleanArchitecture.Application.Common.Interfaces;
 
 namespace LightCleanArchitecture.Application.Services;
 
-public class GeneralService<T> : IGeneralService<T> where T : class
+public abstract class GeneralService<T> : IGeneralService<T> where T : class
 {
     private readonly IApplicationDbContext _dbContext;
 
@@ -12,30 +12,30 @@ public class GeneralService<T> : IGeneralService<T> where T : class
         _dbContext = dbContext;
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync()
+    public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
         return await _dbContext.Set<T>().ToListAsync();
     }
 
-    public async Task<T> GetByIdAsync(int id)
+    public virtual async Task<T> GetByIdAsync(int id)
     {
         return await _dbContext.Set<T>().FindAsync(id);
     }
 
-    public async Task<T> AddAsync(T entity)
+    public virtual async Task<T> AddAsync(T entity)
     {
         _dbContext.Set<T>().Add(entity);
         await _dbContext.SaveChangesAsync();
         return entity;
     }
 
-    public async Task UpdateAsync(T entity)
+    public virtual async Task UpdateAsync(T entity)
     {
         _dbContext.Entry(entity).State = EntityState.Modified;
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task DeleteAsync(int id)
+    public virtual async Task DeleteAsync(int id)
     {
         var entity = await _dbContext.Set<T>().FindAsync(id);
         if (entity != null)
