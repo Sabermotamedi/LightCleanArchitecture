@@ -1,8 +1,8 @@
-﻿using  LightCleanArchitecture.Domain.Enums;
+﻿using LightCleanArchitecture.Domain.Enums;
 
 namespace LightCleanArchitecture.Domain.Entities;
 
-public class TodoList 
+public class TodoList
 {
     public int Id { get; set; }
 
@@ -10,7 +10,7 @@ public class TodoList
 
     public Colour Colour { get; set; } = Colour.White;
 
-    public IList<TodoItem> Items { get; private set; } = new List<TodoItem>();
+    public List<TodoItem> Items { get; set; } = new List<TodoItem>();
 
     public DateTimeOffset Created { get; set; }
 

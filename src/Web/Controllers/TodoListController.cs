@@ -22,6 +22,12 @@ namespace LightCleanArchitecture.Web.Controllers
             return await _todoListService.GetAllAsync();
         }
 
+        [HttpGet(nameof(GetByColorAsync))]
+        public async Task<IEnumerable<TodoListDto>> GetByColorAsync([FromQuery]int colorId)
+        {
+            return await _todoListService.GetByColorAsync(colorId);
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {

@@ -24,5 +24,10 @@ namespace LightCleanArchitecture.Application.Dtos
         {
             return _mapper.Map<TodoListDto>(bed);
         }
+
+        public static List<TodoListDto> ToDto(this List<TodoList> todoLists)
+        {
+            return _mapper.Map<List<TodoListDto>>(todoLists);
+        }
     }
 }
