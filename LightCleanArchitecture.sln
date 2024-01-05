@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7AEB5C06-A0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D0B73C40-B266-4949-96C1-093A9ED58BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightCleanArchitecture.Application.UnitTests", "test\LightCleanArchitecture.Application.UnitTests\LightCleanArchitecture.Application.UnitTests.csproj", "{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{382C68E9-8990-4D62-B23C-674B05A61004} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
 		{70C1ACA9-EC3B-4883-B17E-E34FE72AB898} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
 		{B2CC6C5C-1C45-436A-9422-D8A7A25086C6} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
+		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D} = {D0B73C40-B266-4949-96C1-093A9ED58BCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {276DEDC4-FC36-4B00-B21C-2F846797FADB}
