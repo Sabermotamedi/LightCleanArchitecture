@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.Infr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.Application", "src\Application\LightCleanArchitecture.Application.csproj", "{70C1ACA9-EC3B-4883-B17E-E34FE72AB898}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.WebApi", "src\Web\LightCleanArchitecture.WebApi.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightCleanArchitecture.WebApi", "src\WebAPI\LightCleanArchitecture.WebApi.csproj", "{B2CC6C5C-1C45-436A-9422-D8A7A25086C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0581EC4C-FD1A-4D58-B92A-DA2FF2A44FD7}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,6 +21,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D0B73C40-B266-4949-96C1-093A9ED58BCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightCleanArchitecture.Application.UnitTests", "test\LightCleanArchitecture.Application.UnitTests\LightCleanArchitecture.Application.UnitTests.csproj", "{B19C535D-4081-4AEE-A6FF-25E1767D0B7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{E5BEAD8B-4472-4619-9355-4BEEAE5FC447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,7 @@ Global
 		{70C1ACA9-EC3B-4883-B17E-E34FE72AB898} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
 		{B2CC6C5C-1C45-436A-9422-D8A7A25086C6} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
 		{B19C535D-4081-4AEE-A6FF-25E1767D0B7D} = {D0B73C40-B266-4949-96C1-093A9ED58BCA}
+		{E5BEAD8B-4472-4619-9355-4BEEAE5FC447} = {7AEB5C06-A0DF-483B-AA72-2E8770442FE6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {276DEDC4-FC36-4B00-B21C-2F846797FADB}
