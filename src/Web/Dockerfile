@@ -24,14 +24,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Install additional dependencies, including libgssapi_krb5.so.2
-RUN apt-get update && apt-get install -y \
-    libgssapi-krb5-3
-
-# Copy the library into the application directory
-COPY --from=base /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2 /app
-
-# Set the library path to include the application directory
-ENV LD_LIBRARY_PATH=/app
-
 ENTRYPOINT ["dotnet", "LightCleanArchitecture.WebApi.dll"]

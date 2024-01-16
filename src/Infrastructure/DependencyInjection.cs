@@ -11,16 +11,24 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration, string databaseProvider)
     {
-        //var connectionString = configuration.GetConnectionString("DefaultConnection");
+        var connectionString = string.Empty;
 
-        var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
-        var dbName = Environment.GetEnvironmentVariable("DB_NAME");
-        var dbPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
+        if (IsRunningInDocker())
+        {
+            var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+            var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+            var dbPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
-        var connectionString = $"Server={dbHost};Database={dbName};User Id=sa;Password={dbPassword};Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;";
-       // var connectionString = $"Data Source={dbHost};Initial Catalog={dbName};User ID=sa;Password={dbPassword}";
-        // var connectionString = $"Server=.;Database=lightDb;User Id=sa;Password=123;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;";
-
+            connectionString = $@"Server={dbHost};
+                                  Database={dbName};
+                                  User Id=sa;
+                                  Password={dbPassword};
+                                  Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;Trusted_Connection=false";
+        }
+        else
+        {
+            connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
         services.AddDbContext<ApplicationDbContext>((sp, options) =>
         {
             options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
@@ -52,5 +60,13 @@ public static class DependencyInjection
         services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
         return services;
+    }
+
+    private static bool IsRunningInDocker()
+    {
+        var isDockerCGroup = !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DB_HOST"));
+        var isDockerFilePresent = System.IO.File.Exists("/.dockerenv");
+
+        return isDockerCGroup || isDockerFilePresent;
     }
 }

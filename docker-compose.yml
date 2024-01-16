@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.9'
 
 networks:
   demonetwork:
@@ -6,9 +6,9 @@ networks:
 services:
   demoappdb:
     container_name: app-db
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    image: "mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04"
     ports:
-      - 8002:1433
+      - 1433:1433
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=password@12345#
