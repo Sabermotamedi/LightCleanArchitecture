@@ -17,9 +17,16 @@ namespace LightCleanArchitecture.Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<TodoItem>> GetAllAsync()
+        public async Task<ActionResult<IEnumerable<TodoItem>>> GetAllAsync()
         {
-            return await _todoItemService.GetAllAsync();
+            return Ok(await _todoItemService.GetAllAsync());
+        }
+
+
+        [HttpGet("testapi")]
+        public ActionResult<TodoItem> TestApi()
+        {
+            return Ok(new TodoItem { Id = 1, Note = "Test" });
         }
 
         [HttpGet("{id}")]
